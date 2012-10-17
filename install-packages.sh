@@ -14,3 +14,9 @@ source ${rosWorkspaceDir}/setup.bash
 rosdep install ptu46
 rosmake ptu46 
 
+rosws set ${rosWorkspaceDir}/robotV1 --svn http://rma-ros-install.googlecode.com/svn/trunk/packages/robotV1 -y
+rosws update robotV1
+source ${rosWorkspaceDir}/setup.bash
+rosdep install robotV1
+rosmake robotV1 
+
