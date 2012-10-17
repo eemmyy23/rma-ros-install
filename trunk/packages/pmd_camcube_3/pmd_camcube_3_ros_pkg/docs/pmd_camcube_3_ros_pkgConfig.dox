@@ -1,0 +1,14 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~Integration_Time" : \b [int] Integration time(in msec) for the sensor min: 238, default: 250, max: 5000
+- \b "~Modulation_Frequency" : \b [int] Set the modulation frequency(Hz) of the sensor. By Default the frequency closest to the given value will be set. min: 18000000, default: 20000000, max: 23000000
+- \b "~At_Least" : \b [bool] Modulation Frequency no less than the entered frequency will be set min: False, default: False, max: True
+- \b "~At_Most" : \b [bool] Modulation Frequency no more than the entered frequency will be set min: False, default: False, max: True
+- \b "~Statistical_Noise_Filter_On" : \b [bool] Whether to apply statistical noise filter from pcl or not. min: False, default: False, max: True
+- \b "~Noise_Filtering_NoOfNeighbours" : \b [int] No of neighbours to be considered for applying statistical noise reduction min: 1, default: 30, max: 200
+- \b "~Std_Dev_Mul_Threshold" : \b [double] Standard Deviation Multiplier Threshold for applying statistical noise reduction min: 0.0, default: 0.4, max: 10.0
+- \b "~Amplitude_Filter_On" : \b [bool] Whether to apply amplitude filter or not. Image pixels with amplitude values less than the threshold will be filtered out min: False, default: False, max: True
+- \b "~Amplitude_Threshold" : \b [double] What should be the amplitude filter threshold. Image pixels with lesser aplitude values will be filtered out. Amplitude Filter Status should be true to use this filter. min: 0.0, default: 0.0, max: 2500.0
+
