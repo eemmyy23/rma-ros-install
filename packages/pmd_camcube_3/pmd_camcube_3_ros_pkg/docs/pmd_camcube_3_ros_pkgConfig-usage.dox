@@ -1,0 +1,15 @@
+\subsubsection usage Usage
+\verbatim
+<node name="dynamic_reconfigure_node" pkg="pmd_camcube_3_ros_pkg" type="dynamic_reconfigure_node">
+  <param name="Integration_Time" type="int" value="250" />
+  <param name="Modulation_Frequency" type="int" value="20000000" />
+  <param name="At_Least" type="bool" value="False" />
+  <param name="At_Most" type="bool" value="False" />
+  <param name="Statistical_Noise_Filter_On" type="bool" value="False" />
+  <param name="Noise_Filtering_NoOfNeighbours" type="int" value="30" />
+  <param name="Std_Dev_Mul_Threshold" type="double" value="0.4" />
+  <param name="Amplitude_Filter_On" type="bool" value="False" />
+  <param name="Amplitude_Threshold" type="double" value="0.0" />
+</node>
+\endverbatim
+
