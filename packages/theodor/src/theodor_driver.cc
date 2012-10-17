@@ -34,7 +34,7 @@
  */
 
 // class declaration
-#include <theodor/theodor_driver.h>
+#include <theodor_driver.h>
 
 // serial includes
 #include <sys/types.h>
