@@ -1,0 +1,16 @@
+<package>
+  <description brief="theodor">
+
+     theodor
+
+  </description>
+  <author>emi</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/theodor</url>
+  <depend package="sensor_msgs"/>
+  <depend package="roscpp"/>
+  <depend package="actionlib"/>
+</package>
+
+
