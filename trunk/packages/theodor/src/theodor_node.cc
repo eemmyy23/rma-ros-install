@@ -1,6 +1,6 @@
 #include <string>
 #include <ros/ros.h>
-#include <theodor/theodor_driver.h>
+#include <theodor_driver.h>
 #include <sensor_msgs/JointState.h>
 
 namespace THEODOR {
