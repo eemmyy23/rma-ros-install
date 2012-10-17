@@ -1,0 +1,14 @@
+<launch>
+  
+
+  <node pkg="theodor" type="r2Serial" name="serial_node" args="0 /dev/ttyUSB1 38400" output="screen">
+  </node>
+    <!--
+  <node pkg="mjpeg_server" type="mjpeg_server" name="mjpeg_server" args="_port:=8881" output="screen">
+  </node>
+    -->
+
+
+ 
+
+</launch>

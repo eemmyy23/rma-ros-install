@@ -1,0 +1,16 @@
+<launch>
+  
+ <include file="$(find theodor)/launch/theodor.launch">
+ </include>
+ 
+
+ <include file="$(find theodor)/launch/cam.launch">
+ </include>
+
+<!-- kinect ->
+ <include file="$(find openni_launch)/launch/openni.launch">
+ </include>
+-->
+
+
+</launch>

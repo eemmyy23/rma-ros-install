@@ -1,0 +1,35 @@
+<launch>
+ <!-- generic usb camera ->
+  <node name="usb_cam0" pkg="usb_cam" type="usb_cam_node" output="log">
+    <param name="video_device" value="/dev/video0" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="yuyv" />
+    <param name="camera_frame_id" value="usb_cam0" />
+    <param name="io_method" value="mmap"/>
+  </node>
+--> 
+
+ <!-- generic usb camera -->
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="log">
+    <param name="video_device" value="/dev/video0" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+  </node>
+<!----> 
+
+
+  <!-- bumblebee ->
+  <node pkg="camera1394" type="camera1394_node" name="bumblebee2" args="_guid:=00b09d01006d4134 _video_mode:=640x480_mono8 _iso_speed:=400 _frame_rate:=30">
+  </node>
+-->
+    <!-- pmd3 ->
+  <node pkg="pmd_camcube_3_ros_pkg" type="pmd_camcube_3_node" name="pmd_camcube_3">
+  </node>
+-->  
+
+
+</launch>

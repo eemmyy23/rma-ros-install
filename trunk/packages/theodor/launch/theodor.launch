@@ -1,0 +1,18 @@
+<launch>
+  
+
+  <node pkg="theodor" type="r2Serial" name="serial_node" args="0 /dev/ttyUSB1 38400">
+  </node>
+    
+  <node pkg="ptu46" type="ptu46" name="ptu46" output="screen">
+    <param name="port" value="/dev/ttyUSB0" />
+  </node>
+  
+  <node pkg="rosbridge" type="rosbridge.py" name="rosbridge" output="screen">
+  </node>
+  
+  <node pkg="mjpeg_server" type="mjpeg_server" name="mjpeg_server" args="_port:=10001">
+  </node>
+ 
+
+</launch>
