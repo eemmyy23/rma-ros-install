@@ -25,7 +25,7 @@ source ${rosWorkspaceDir}/setup.bash
 
 sudo apt-get -y install ros-electric-geometry
 sudo apt-get -y install ros-electric-common
-
+sudo apt-get -y install ros-electric-joystick-drivers
 
 
 
