@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../PMDSDK2/include/pmddatadescription.h
+pmdsdk2common.h
+../PMDSDK2/include/pmdsdk2common.h
+
+../PMDSDK2/include/pmdsdk2.h
+pmddatadescription.h
+-
+
+../PMDSDK2/include/pmdsdk2common.h
+stddef.h
+-
+
+/home/emi/work_electric/pmd_camcube_3_ros_pkg/src/sdk/pmdsdk2.cpp
+pmddatadescription.h
+/home/emi/work_electric/pmd_camcube_3_ros_pkg/src/sdk/pmddatadescription.h
+pmdsdk2common.h
+/home/emi/work_electric/pmd_camcube_3_ros_pkg/src/sdk/pmdsdk2common.h
+pmdsdk2.h
+/home/emi/work_electric/pmd_camcube_3_ros_pkg/src/sdk/pmdsdk2.h
+
