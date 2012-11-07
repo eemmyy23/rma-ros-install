@@ -20,6 +20,12 @@ source ${rosWorkspaceDir}/setup.bash
 rosdep install robotV1
 rosmake robotV1
 
+rosws set ${rosWorkspaceDir}/imu_position --svn http://rma-ros-install.googlecode.com/svn/trunk/packages/imu_position -y
+rosws update imu_position
+source ${rosWorkspaceDir}/setup.bash
+rosdep install imu_position
+rosmake imu_position
+
 
 rosws set ${rosWorkspaceDir}/usb_cam --svn http://svn.code.sf.net/p/bosch-ros-pkg/code/trunk/stacks/bosch_drivers/usb_cam -y
 rosws update usb_cam
