@@ -13,6 +13,11 @@ sudo apt-get update
 
 sudo apt-get install -y ros-fuerte-ros-comm
 
+echo "source /opt/ros/fuerte/setup.bash" >> ~/.bashrc
+. ~/.bashrc
+
+
+
 sudo apt-get -y install subversion
 #is there a proxy? svn may not be configured
 if [ -n "$http_proxy" ]; then
