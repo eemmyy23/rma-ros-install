@@ -25,11 +25,11 @@ if [ -n "$http_proxy" ]; then
                 tmp=`echo -n ${http_proxy} | cut -d/ -f3`
                 host=`echo $tmp | cut -d: -f1`
                 port=`echo $tmp | cut -d: -f2`    
-                svnConfigFile="$HOME/.subversion/servers"
+                svnConfigFile="/etc/subversion/servers"
     if [ `cat $svnConfigFile | grep -c $host` -eq 0 ];then
         echo "proxy is not set for svn"
-        echo "http-proxy-host = $host" >> $svnConfigFile
-        echo "http-proxy-port = $port" >> $svnConfigFile
+        sudo echo "http-proxy-host = $host" >> $svnConfigFile
+        sudo echo "http-proxy-port = $port" >> $svnConfigFile
         echo "$svnConfigFile was configured with your proxy settings"
     else
         echo "proxy settings are already applied for svn"
